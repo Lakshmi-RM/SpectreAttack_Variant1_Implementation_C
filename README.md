@@ -12,10 +12,6 @@ o victim.c: Vulnerable code containing the secret string and padding to prevent 
 * Code_Windows/: Implementation for local AMD-based Windows system. 
 o attackvictim.c: Unified implementation (combined attacker/victim) using QueryPerformanceCounter.
 
-* Report/:
-o LakshmiRamanathan_ProjectReport_Spectre.pdf: Final research paper in IEEE format.
-o EvaluationResults_Screenshots.pdf: Includes the screenshots of the evaluation results obtained for different strings in both Windows and Linux
-
 2. System Specifications
 Linux Environment (Eustis)
 * OS: Ubuntu 24.04.4 LTS (Kernel 6.8.0). 
