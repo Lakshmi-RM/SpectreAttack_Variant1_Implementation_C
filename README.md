@@ -24,14 +24,14 @@ Windows Environment (Local)
 * Compiler: MSVC (Microsoft Visual C++) via VS Code. 
 
 3. How to Reproduce Results
-Linux (Eustis)
-1. Navigate to the Code_Linux directory.
-2. Manual compilation using Command prompt "gcc victim.c attack.c -o spectre_attack -O0"
-3. Run the executable "./spectre_attack"
+  Linux (Eustis)
+  1. Navigate to the Code_Linux directory.
+  2. Manual compilation using Command prompt "gcc victim.c attack.c -o spectre_attack -O0"
+  3. Run the executable "./spectre_attack"
 
-Windows (Local)
-1. Open Code_Windows/attackvictim.c in VS Code.
-2. Compile and run using the integrated C/C++ build tools.
+  Windows (Local)
+  1. Open Code_Windows/attackvictim.c in VS Code.
+  2. Compile and run using the integrated C/C++ build tools.
 
 4. Configuration Details
 Microarchitectural attacks are highly environment-dependent. If the attack fails to leak data, adjust the following constants in the source code:
