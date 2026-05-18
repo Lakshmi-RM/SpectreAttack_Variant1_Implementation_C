@@ -13,25 +13,25 @@ o victim.c: Vulnerable code containing the secret string and padding to prevent 
 o attackvictim.c: Unified implementation (combined attacker/victim) using QueryPerformanceCounter.
 
 2. System Specifications
-Linux Environment (Eustis)
+o Linux Environment (Eustis)
 * OS: Ubuntu 24.04.4 LTS (Kernel 6.8.0). 
 * Hardware: Intel(R) Xeon(R) E5430 @ 2.66 GHz. 
 * Setup: Requires connection to the UCF campus network/VPN to access the Eustis cluster
 
-Windows Environment (Local) 
+o Windows Environment (Local) 
 * OS: Microsoft Windows 11 Home. 
 * Hardware: AMD Ryzen 9 5900HS with Radeon Graphics. 
 * Compiler: MSVC (Microsoft Visual C++) via VS Code. 
 
 3. How to Reproduce Results
-  Linux (Eustis)
-  1. Navigate to the Code_Linux directory.
-  2. Manual compilation using Command prompt "gcc victim.c attack.c -o spectre_attack -O0"
-  3. Run the executable "./spectre_attack"
+  o Linux (Eustis)
+   * Navigate to the Code_Linux directory.
+   * Manual compilation using Command prompt "gcc victim.c attack.c -o spectre_attack -O0"
+   * Run the executable "./spectre_attack"
 
-  Windows (Local)
-  1. Open Code_Windows/attackvictim.c in VS Code.
-  2. Compile and run using the integrated C/C++ build tools.
+  o Windows (Local)
+   * Open Code_Windows/attackvictim.c in VS Code.
+   * Compile and run using the integrated C/C++ build tools.
 
 4. Configuration Details
 Microarchitectural attacks are highly environment-dependent. If the attack fails to leak data, adjust the following constants in the source code:
